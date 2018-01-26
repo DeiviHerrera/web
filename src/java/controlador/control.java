@@ -1,6 +1,6 @@
 package controlador;
 
-import DAO.DMDAO;
+import DAO.DescansoMedicoDAO;
 import DAO.TrabajadorDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,7 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import modelo.DM;
+import modelo.DescansoMedico;
 import modelo.Trabajador;
 import modelo.operaciones;
 
@@ -58,8 +58,8 @@ public class control extends HttpServlet {
             
             
             
-            DM trab=new DM(DMDAO.generacodigo(), fecini, fecfin, diagnostico, centromedico, medico, cmp, idtra);
-            DMDAO.RegistrarDM(trab);
+            DescansoMedico trab=new DescansoMedico(DescansoMedicoDAO.generacodigo(), fecini, fecfin, diagnostico, centromedico, medico, cmp, idtra);
+            DescansoMedicoDAO.RegistrarDM(trab);
             pag = "//succes.html";
             
         }else {

@@ -23,7 +23,7 @@
         <h1>Trabajadores</h1>
         
         <table border="2" align="center">
-                    <th>Id</th>
+                    <th>Codigo</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
                     <th>Fec nac</th>
@@ -39,10 +39,10 @@
                         out.println("<td>"+listatrab.get(i).getIdTra()+"</td>");
                         out.println("<td>"+listatrab.get(i).getNomTra()+"</td>");
                         out.println("<td>"+listatrab.get(i).getApeTra()+"</td>");
-                        out.println("<td>"+listatrab.get(i).getDniTra()+"</td>");
+                        out.println("<td>"+listatrab.get(i).getFnacTra()+"</td>");
                         out.println("<td>"+listatrab.get(i).getDirecTra()+"</td>");
                         out.println("<td>"+listatrab.get(i).getEstcivTra()+"</td>");
-                        out.println("<td>"+listatrab.get(i).getFnacTra()+"</td>");
+                        out.println("<td>"+listatrab.get(i).getDniTra()+"</td>");
                         out.println("<td>"+listatrab.get(i).getSexoTra()+"</td>");
                         
                         
@@ -56,6 +56,8 @@
                      %>
                             
         </table>    
-    </center>
+                     <br> <br/>           
+        <a href="index.html">Volver al indice</a>   
+        </center>
     </body>
 </html>
