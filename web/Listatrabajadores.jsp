@@ -34,7 +34,7 @@
                     <th>Descansos</th>
                     <%
                         
-                        for (int i = 0; i < listatrab.size(); i++) {
+                        for (int i = 0; i < listatrab.size(); i++){
                         out.println("<tr>");
                         out.println("<td>"+listatrab.get(i).getIdTra()+"</td>");
                         out.println("<td>"+listatrab.get(i).getNomTra()+"</td>");
